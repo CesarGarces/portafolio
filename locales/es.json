@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "philosophy": "Filosofía",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Senior Frontend Engineer",
+    "title": "César Garcés",
+    "subtitle": "Arquitectura Frontend",
+    "subtitle2": "a Escala",
+    "description": "Construyo sistemas frontend escalables, performantes y mantenibles.",
+    "description2": "8+ años de experiencia liderando equipos y definiendo estándares en aplicaciones de alto impacto.",
+    "ctaProjects": "Ver Proyectos",
+    "ctaContact": "Contactar",
+    "stats": {
+      "years": "Años de Experiencia",
+      "projects": "Proyectos Liderados",
+      "teams": "Equipos Formados"
+    }
+  },
+  "about": {
+    "title": "Sobre",
+    "titleHighlight": "Mí",
+    "paragraph1": "Con más de 8 años de experiencia como Frontend Engineer, he dedicado mi carrera a construir aplicaciones web y móviles que no solo funcionan, sino que escalan y perduran.",
+    "paragraph2": "Mi enfoque combina arquitectura limpia con performance y experiencia de usuario. He liderado equipos en la construcción de sistemas de e-commerce que manejan millones de transacciones, dashboards en tiempo real para toma de decisiones críticas, y aplicaciones móviles con millones de usuarios activos.",
+    "paragraph3": "Más allá del código, me especializo en definir estándares, establecer prácticas de testing, y crear sistemas de observabilidad que permiten a los equipos construir con confianza y escalar con seguridad.",
+    "values": {
+      "impact": {
+        "title": "Impacto Medible",
+        "description": "Cada decisión técnica está alineada con objetivos de negocio y métricas de éxito."
+      },
+      "leadership": {
+        "title": "Liderazgo Técnico",
+        "description": "Formo equipos, establezco estándares y creo cultura de excelencia en frontend."
+      },
+      "scalability": {
+        "title": "Escalabilidad",
+        "description": "Diseño sistemas que crecen sin comprometer performance ni mantenibilidad."
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades &",
+    "titleHighlight": "Stack",
+    "description": "Tecnologías y herramientas que domino para construir sistemas frontend de clase mundial"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "titleHighlight": "Profesional",
+    "description": "Trayectoria construyendo sistemas frontend de alto impacto y escala",
+    "scale": "Escala:",
+    "items": {
+      "0": {
+        "company": "Startup de Alto Crecimiento",
+        "role": "Senior Frontend Engineer / Tech Lead",
+        "period": "2022 - Presente",
+        "achievements": {
+          "0": "Lideré la arquitectura frontend de una plataforma de e-commerce que procesa $50M+ anuales",
+          "1": "Implementé sistema de microfrontends con Module Federation, reduciendo tiempo de build en 60%",
+          "2": "Establecí estándares de testing que aumentaron cobertura de código del 40% al 85%",
+          "3": "Diseñé sistema de observabilidad frontend que redujo tiempo de resolución de bugs en 70%"
+        },
+        "scale": "Millones de usuarios, miles de transacciones diarias"
+      },
+      "1": {
+        "company": "Empresa de Tecnología",
+        "role": "Senior Frontend Engineer",
+        "period": "2020 - 2022",
+        "achievements": {
+          "0": "Construí dashboard en tiempo real para monitoreo de infraestructura con 10K+ métricas/s",
+          "1": "Implementé arquitectura de estado global con Redux Toolkit + Sagas para apps complejas",
+          "2": "Optimicé bundle size en 40% mediante code splitting y lazy loading estratégico",
+          "3": "Lideré migración de legacy codebase a React + TypeScript sin downtime"
+        },
+        "scale": "Dashboard crítico para operaciones 24/7"
+      },
+      "2": {
+        "company": "Agencia Digital",
+        "role": "Frontend Engineer",
+        "period": "2018 - 2020",
+        "achievements": {
+          "0": "Desarrollé aplicaciones React Native para iOS y Android con 500K+ descargas",
+          "1": "Implementé sistema de notificaciones push escalable para múltiples clientes",
+          "2": "Creé design system reutilizable que aceleró desarrollo en 50%",
+          "3": "Optimicé performance de apps móviles, mejorando Core Web Vitals significativamente"
+        },
+        "scale": "Múltiples apps con cientos de miles de usuarios"
+      },
+      "3": {
+        "company": "Startup Fintech",
+        "role": "Frontend Engineer",
+        "period": "2016 - 2018",
+        "achievements": {
+          "0": "Construí desde cero aplicación web de gestión financiera con React",
+          "1": "Implementé autenticación y autorización robusta con JWT y refresh tokens",
+          "2": "Desarrollé componentes reutilizables que se convirtieron en base del design system",
+          "3": "Colaboré en definición de arquitectura frontend escalable para crecimiento rápido"
+        },
+        "scale": "Aplicación core de negocio con miles de usuarios activos"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "titleHighlight": "Destacados",
+    "description": "Sistemas complejos construidos con arquitectura sólida y enfoque en escalabilidad",
+    "problem": "Problema",
+    "solution": "Solución",
+    "highlights": "Logros Clave",
+    "architecture": "Arquitectura",
+    "impact": "Impacto:",
+    "items": {
+      "0": {
+        "title": "Plataforma E-commerce de Alto Rendimiento",
+        "problem": "E-commerce legacy con problemas de performance y escalabilidad, tiempos de carga >5s y baja conversión.",
+        "solution": "Arquitectura moderna con Next.js, microfrontends, y optimizaciones agresivas de performance.",
+        "highlights": {
+          "0": "Reducción de tiempo de carga de 5s a 0.8s (Core Web Vitals: LCP < 1s)",
+          "1": "Arquitectura de microfrontends con Module Federation",
+          "2": "Sistema de caché multi-nivel (CDN + In-memory)",
+          "3": "Code splitting inteligente redujo bundle inicial en 60%"
+        },
+        "architecture": "Clean Architecture con separación de capas, monorepo con Turborepo",
+        "impact": "Aumento de conversión en 35%, reducción de bounce rate en 50%"
+      },
+      "1": {
+        "title": "Dashboard de Observabilidad en Tiempo Real",
+        "problem": "Necesidad de monitorear infraestructura crítica con latencia mínima y visualización de millones de métricas.",
+        "solution": "Dashboard React con WebSockets, optimización de renderizado, y visualización de datos a gran escala.",
+        "highlights": {
+          "0": "Procesamiento de 10K+ métricas por segundo en tiempo real",
+          "1": "Visualización con D3.js optimizada para 60fps",
+          "2": "Sistema de alertas inteligente con reducción de falsos positivos",
+          "3": "Arquitectura de estado global con Redux Toolkit + Sagas"
+        },
+        "architecture": "Arquitectura basada en eventos, separación de concerns, testing exhaustivo",
+        "impact": "Tiempo de detección de incidentes reducido de 15min a 30s"
+      },
+      "2": {
+        "title": "Aplicación Móvil Multi-plataforma",
+        "problem": "Necesidad de app nativa para iOS y Android con código compartido y performance nativa.",
+        "solution": "React Native con arquitectura escalable, design system propio, y optimizaciones de performance.",
+        "highlights": {
+          "0": "500K+ descargas con rating promedio de 4.7+ estrellas",
+          "1": "Código compartido >90% entre iOS y Android",
+          "2": "Sistema de notificaciones push escalable",
+          "3": "Optimización de bundle y lazy loading redujo tiempo de inicio en 40%"
+        },
+        "architecture": "Feature-based architecture, design system centralizado, CI/CD automatizado",
+        "impact": "Lanzamiento simultáneo en ambas plataformas, reducción de bugs en 60%"
+      },
+      "3": {
+        "title": "Sistema de Notificaciones en Tiempo Real",
+        "problem": "Sistema de notificaciones que no escalaba, con alta latencia y baja confiabilidad.",
+        "solution": "Sistema distribuido con WebSockets, queue management, y estrategias de retry inteligentes.",
+        "highlights": {
+          "0": "Arquitectura de microservicios con alta disponibilidad",
+          "1": "Sistema de colas con Redis para garantizar entrega",
+          "2": "Retry exponencial y circuit breakers para resiliencia",
+          "3": "Dashboard de monitoreo y analytics en tiempo real"
+        },
+        "architecture": "Event-driven architecture, message queue pattern, observability first",
+        "impact": "99.9% de tasa de entrega, latencia promedio <100ms"
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Filosofía",
+    "titleHighlight": "de Ingeniería",
+    "description": "Principios que guían cada decisión técnica y arquitectónica",
+    "cleanArchitecture": {
+      "title": "Clean Architecture",
+      "description": "Separación clara de responsabilidades, capas bien definidas, y dependencias unidireccionales. El código debe ser predecible y fácil de navegar.",
+      "details": {
+        "1": "Separación de concerns (UI, lógica de negocio, datos)",
+        "2": "Dependency Inversion Principle",
+        "3": "Feature-based organization",
+        "4": "Composability sobre herencia"
+      }
+    },
+    "performance": {
+      "title": "Performance First",
+      "description": "La performance no es una optimización tardía, es un requisito desde el diseño. Cada decisión técnica considera su impacto en rendimiento.",
+      "details": {
+        "1": "Code splitting y lazy loading estratégico",
+        "2": "Optimización de bundle size",
+        "3": "Core Web Vitals como métricas clave",
+        "4": "Profiling y monitoring continuo"
+      }
+    },
+    "maintainability": {
+      "title": "Mantenibilidad",
+      "description": "El código se lee más veces de las que se escribe. Priorizo claridad, consistencia y documentación sobre \"clever code\".",
+      "details": {
+        "1": "TypeScript estricto para type safety",
+        "2": "Naming conventions consistentes",
+        "3": "Documentación inline cuando es necesario",
+        "4": "Refactoring continuo, no acumulación de deuda técnica"
+      }
+    },
+    "testing": {
+      "title": "Testing Culture",
+      "description": "Los tests no son un checklist, son una herramienta de diseño. Escribir tests primero ayuda a pensar en la API y casos edge.",
+      "details": {
+        "1": "Unit tests para lógica de negocio",
+        "2": "Integration tests para flujos críticos",
+        "3": "Testing Library para componentes",
+        "4": "Cobertura significativa, no solo porcentajes"
+      }
+    },
+    "dx": {
+      "title": "Developer Experience",
+      "description": "Un buen DX acelera el desarrollo, reduce bugs, y mejora la satisfacción del equipo. Inversión en tooling y estándares paga dividendos.",
+      "details": {
+        "1": "Hot reload rápido y confiable",
+        "2": "Error messages claros y accionables",
+        "3": "Linting y formatting automatizados",
+        "4": "Onboarding documentation actualizada"
+      }
+    },
+    "quote": "La excelencia en frontend no se trata solo de escribir código que funciona. Se trata de construir sistemas que escalan, que son mantenibles, y que empoderan a los equipos para construir con confianza."
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Interestado en colaborar? Estoy abierto a oportunidades en Big Tech y startups de alto crecimiento.",
+    "connect": "Conectemos",
+    "connectDescription": "Estoy disponible para conversaciones sobre arquitectura frontend, liderazto técnico, o oportunidades de colaboración. No dudes en contactarme.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto o oportunidad...",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "submitted": "Enviado"
+    }
+  },
+  "footer": {
+    "text": "© {year} César Garcés. Construido con Next.js, TypeScript y Framer Motion."
+  }
+}

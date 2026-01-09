@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "philosophy": "Philosophy",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Senior Frontend Engineer",
+    "title": "César Garcés",
+    "subtitle": "Frontend Architecture",
+    "subtitle2": "at Scale",
+    "description": "I build scalable, performant, and maintainable frontend systems.",
+    "description2": "8+ years of experience leading teams and defining standards in high-impact applications.",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Contact",
+    "stats": {
+      "years": "Years of Experience",
+      "projects": "Projects Led",
+      "teams": "Teams Formed"
+    }
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Me",
+    "paragraph1": "With over 8 years of experience as a Frontend Engineer, I've dedicated my career to building web and mobile applications that not only work, but scale and endure.",
+    "paragraph2": "My approach combines clean architecture with performance and user experience. I've led teams in building e-commerce systems handling millions of transactions, real-time dashboards for critical decision-making, and mobile applications with millions of active users.",
+    "paragraph3": "Beyond code, I specialize in defining standards, establishing testing practices, and creating observability systems that enable teams to build with confidence and scale safely.",
+    "values": {
+      "impact": {
+        "title": "Measurable Impact",
+        "description": "Every technical decision is aligned with business objectives and success metrics."
+      },
+      "leadership": {
+        "title": "Technical Leadership",
+        "description": "I build teams, establish standards, and create a culture of excellence in frontend."
+      },
+      "scalability": {
+        "title": "Scalability",
+        "description": "I design systems that grow without compromising performance or maintainability."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills &",
+    "titleHighlight": "Stack",
+    "description": "Technologies and tools I master to build world-class frontend systems"
+  },
+  "experience": {
+    "title": "Professional",
+    "titleHighlight": "Experience",
+    "description": "Journey building high-impact and scale frontend systems",
+    "scale": "Scale:",
+    "items": {
+      "0": {
+        "company": "High-Growth Startup",
+        "role": "Senior Frontend Engineer / Tech Lead",
+        "period": "2022 - Present",
+        "achievements": {
+          "0": "Led frontend architecture of an e-commerce platform processing $50M+ annually",
+          "1": "Implemented microfrontends system with Module Federation, reducing build time by 60%",
+          "2": "Established testing standards that increased code coverage from 40% to 85%",
+          "3": "Designed frontend observability system that reduced bug resolution time by 70%"
+        },
+        "scale": "Millions of users, thousands of daily transactions"
+      },
+      "1": {
+        "company": "Technology Company",
+        "role": "Senior Frontend Engineer",
+        "period": "2020 - 2022",
+        "achievements": {
+          "0": "Built real-time dashboard for infrastructure monitoring with 10K+ metrics/s",
+          "1": "Implemented global state architecture with Redux Toolkit + Sagas for complex apps",
+          "2": "Optimized bundle size by 40% through strategic code splitting and lazy loading",
+          "3": "Led migration of legacy codebase to React + TypeScript without downtime"
+        },
+        "scale": "Critical dashboard for 24/7 operations"
+      },
+      "2": {
+        "company": "Digital Agency",
+        "role": "Frontend Engineer",
+        "period": "2018 - 2020",
+        "achievements": {
+          "0": "Developed React Native applications for iOS and Android with 500K+ downloads",
+          "1": "Implemented scalable push notification system for multiple clients",
+          "2": "Created reusable design system that accelerated development by 50%",
+          "3": "Optimized mobile app performance, significantly improving Core Web Vitals"
+        },
+        "scale": "Multiple apps with hundreds of thousands of users"
+      },
+      "3": {
+        "company": "Fintech Startup",
+        "role": "Frontend Engineer",
+        "period": "2016 - 2018",
+        "achievements": {
+          "0": "Built financial management web application from scratch with React",
+          "1": "Implemented robust authentication and authorization with JWT and refresh tokens",
+          "2": "Developed reusable components that became the foundation of the design system",
+          "3": "Collaborated on defining scalable frontend architecture for rapid growth"
+        },
+        "scale": "Core business application with thousands of active users"
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured",
+    "titleHighlight": "Projects",
+    "description": "Complex systems built with solid architecture and focus on scalability",
+    "problem": "Problem",
+    "solution": "Solution",
+    "highlights": "Key Achievements",
+    "architecture": "Architecture",
+    "impact": "Impact:",
+    "items": {
+      "0": {
+        "title": "High-Performance E-commerce Platform",
+        "problem": "Legacy e-commerce with performance and scalability issues, load times >5s and low conversion.",
+        "solution": "Modern architecture with Next.js, microfrontends, and aggressive performance optimizations.",
+        "highlights": {
+          "0": "Reduced load time from 5s to 0.8s (Core Web Vitals: LCP < 1s)",
+          "1": "Microfrontends architecture with Module Federation",
+          "2": "Multi-level caching system (CDN + In-memory)",
+          "3": "Smart code splitting reduced initial bundle by 60%"
+        },
+        "architecture": "Clean Architecture with layer separation, monorepo with Turborepo",
+        "impact": "35% increase in conversion, 50% reduction in bounce rate"
+      },
+      "1": {
+        "title": "Real-Time Observability Dashboard",
+        "problem": "Need to monitor critical infrastructure with minimal latency and visualization of millions of metrics.",
+        "solution": "React dashboard with WebSockets, rendering optimization, and large-scale data visualization.",
+        "highlights": {
+          "0": "Processing 10K+ metrics per second in real-time",
+          "1": "D3.js visualization optimized for 60fps",
+          "2": "Intelligent alert system with reduced false positives",
+          "3": "Global state architecture with Redux Toolkit + Sagas"
+        },
+        "architecture": "Event-driven architecture, separation of concerns, exhaustive testing",
+        "impact": "Incident detection time reduced from 15min to 30s"
+      },
+      "2": {
+        "title": "Multi-Platform Mobile Application",
+        "problem": "Need for native app for iOS and Android with shared code and native performance.",
+        "solution": "React Native with scalable architecture, custom design system, and performance optimizations.",
+        "highlights": {
+          "0": "500K+ downloads with average rating of 4.7+ stars",
+          "1": ">90% shared code between iOS and Android",
+          "2": "Scalable push notification system",
+          "3": "Bundle optimization and lazy loading reduced startup time by 40%"
+        },
+        "architecture": "Feature-based architecture, centralized design system, automated CI/CD",
+        "impact": "Simultaneous launch on both platforms, 60% reduction in bugs"
+      },
+      "3": {
+        "title": "Real-Time Notification System",
+        "problem": "Notification system that didn't scale, with high latency and low reliability.",
+        "solution": "Distributed system with WebSockets, queue management, and intelligent retry strategies.",
+        "highlights": {
+          "0": "Microservices architecture with high availability",
+          "1": "Redis queue system to guarantee delivery",
+          "2": "Exponential retry and circuit breakers for resilience",
+          "3": "Real-time monitoring and analytics dashboard"
+        },
+        "architecture": "Event-driven architecture, message queue pattern, observability first",
+        "impact": "99.9% delivery rate, average latency <100ms"
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Engineering",
+    "titleHighlight": "Philosophy",
+    "description": "Principles that guide every technical and architectural decision",
+    "cleanArchitecture": {
+      "title": "Clean Architecture",
+      "description": "Clear separation of responsibilities, well-defined layers, and unidirectional dependencies. Code should be predictable and easy to navigate.",
+      "details": {
+        "1": "Separation of concerns (UI, business logic, data)",
+        "2": "Dependency Inversion Principle",
+        "3": "Feature-based organization",
+        "4": "Composability over inheritance"
+      }
+    },
+    "performance": {
+      "title": "Performance First",
+      "description": "Performance is not a late optimization, it's a requirement from design. Every technical decision considers its performance impact.",
+      "details": {
+        "1": "Strategic code splitting and lazy loading",
+        "2": "Bundle size optimization",
+        "3": "Core Web Vitals as key metrics",
+        "4": "Continuous profiling and monitoring"
+      }
+    },
+    "maintainability": {
+      "title": "Maintainability",
+      "description": "Code is read more times than it's written. I prioritize clarity, consistency, and documentation over \"clever code\".",
+      "details": {
+        "1": "Strict TypeScript for type safety",
+        "2": "Consistent naming conventions",
+        "3": "Inline documentation when needed",
+        "4": "Continuous refactoring, no technical debt accumulation"
+      }
+    },
+    "testing": {
+      "title": "Testing Culture",
+      "description": "Tests are not a checklist, they're a design tool. Writing tests first helps think about the API and edge cases.",
+      "details": {
+        "1": "Unit tests for business logic",
+        "2": "Integration tests for critical flows",
+        "3": "Testing Library for components",
+        "4": "Meaningful coverage, not just percentages"
+      }
+    },
+    "dx": {
+      "title": "Developer Experience",
+      "description": "Good DX accelerates development, reduces bugs, and improves team satisfaction. Investment in tooling and standards pays dividends.",
+      "details": {
+        "1": "Fast and reliable hot reload",
+        "2": "Clear and actionable error messages",
+        "3": "Automated linting and formatting",
+        "4": "Updated onboarding documentation"
+      }
+    },
+    "quote": "Excellence in frontend is not just about writing code that works. It's about building systems that scale, that are maintainable, and that empower teams to build with confidence."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Interested in collaborating? I'm open to opportunities at Big Tech and high-growth startups.",
+    "connect": "Let's Connect",
+    "connectDescription": "I'm available for conversations about frontend architecture, technical leadership, or collaboration opportunities. Feel free to reach out.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project or opportunity...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "submitted": "Sent"
+    }
+  },
+  "footer": {
+    "text": "© {year} César Garcés. Built with Next.js, TypeScript and Framer Motion."
+  }
+}
