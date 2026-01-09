@@ -38,14 +38,14 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simular envío (aquí iría la lógica real de envío)
     await new Promise(resolve => setTimeout(resolve, 1000))
-    
+
     setIsSubmitting(false)
     setIsSubmitted(true)
     setFormData({ name: '', email: '', message: '' })
-    
+
     setTimeout(() => setIsSubmitted(false), 3000)
   }
 

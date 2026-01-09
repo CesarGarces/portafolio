@@ -201,7 +201,7 @@ export default function Hero() {
       >
         {/* Base gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary-900/30" />
-        
+
         {/* Animated radial gradient (follows mouse) */}
         <motion.div
           className="absolute inset-0"
@@ -359,7 +359,7 @@ export default function Hero() {
           <motion.button
             onClick={scrollToProjects}
             className="group relative px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-all duration-300 overflow-hidden shadow-lg shadow-primary-500/20"
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
               boxShadow: '0 20px 40px rgba(14, 165, 233, 0.3)',
             }}
@@ -385,7 +385,7 @@ export default function Hero() {
           <motion.a
             href="#contact"
             className="px-8 py-4 border border-foreground/20 hover:border-primary-500/50 text-foreground rounded-lg font-medium transition-all duration-300 backdrop-blur-sm bg-background/50"
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
               borderColor: 'rgba(14, 165, 233, 0.5)',
             }}
@@ -435,11 +435,11 @@ export default function Hero() {
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
         initial={{ opacity: 0, y: -20 }}
-        animate={{ 
+        animate={{
           opacity: [0, 1, 1, 0],
           y: [0, 10, 10, 0],
         }}
-        transition={{ 
+        transition={{
           duration: 3,
           repeat: Infinity,
           delay: 2.5,
@@ -447,7 +447,7 @@ export default function Hero() {
         }}
       >
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1, 1.2, 1],
           }}
           transition={{
