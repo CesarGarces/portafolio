@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail } from 'lucide-react'
 import { useI18n } from '@/contexts/I18nContext'
+import { SOCIAL_LINKS } from '@/components/constants'
 
 export default function Footer() {
   const { t } = useI18n()
@@ -30,14 +31,14 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <a
-              href="mailto:cesar@example.com"
+              href={SOCIAL_LINKS.email}
               className="text-foreground/60 hover:text-primary-400 transition-colors"
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/cesar-garces"
+              href={SOCIAL_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-primary-400 transition-colors"
@@ -46,7 +47,7 @@ export default function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/cesar-garces"
+              href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-primary-400 transition-colors"

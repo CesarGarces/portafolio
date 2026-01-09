@@ -5,24 +5,25 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { Mail, Linkedin, Github, Send, Check } from 'lucide-react'
 import { useI18n } from '@/contexts/I18nContext'
+import { SOCIAL_LINKS } from '@/components/constants'
 
 const socialLinks = [
   {
     icon: Mail,
     label: 'Email',
-    href: 'mailto:cesar@example.com',
+    href: SOCIAL_LINKS.email,
     color: 'text-blue-400',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/cesar-garces',
+    href: SOCIAL_LINKS.linkedin,
     color: 'text-blue-500',
   },
   {
     icon: Github,
     label: 'GitHub',
-    href: 'https://github.com/cesar-garces',
+    href: SOCIAL_LINKS.github,
     color: 'text-foreground/80',
   },
 ]
