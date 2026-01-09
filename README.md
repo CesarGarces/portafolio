@@ -1,27 +1,74 @@
-# César Garcés - Portfolio
+# César Garcés — Senior Frontend Engineer
 
-Portfolio personal de César Garcés, Senior Frontend Engineer.
+Personal portfolio showcasing my experience as a Senior Frontend Engineer, focused on building scalable, high-performance, and well-architected frontend applications.
 
-## Tech Stack
+This project is not intended as a template or library, but as a professional showcase of my engineering approach, technical skills, and design sensibility.
 
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Lucide React (icons)
+---
 
-## Getting Started
+## 👋 About Me
 
-```bash
-npm install
-npm run dev
-```
+I am a Senior Frontend Engineer with 8+ years of experience building modern web and mobile applications using React, React Native, and TypeScript.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+My work focuses on:
+- Scalable frontend architectures
+- Performance optimization
+- Clean, maintainable codebases
+- State management at scale
+- Strong collaboration with product and design teams
 
-## Build
+I have experience leading frontend initiatives, defining standards, and building complex systems such as e-commerce platforms, dashboards, real-time applications, and micro-frontend architectures.
 
-```bash
-npm run build
-npm start
-```
+---
+
+## 🎯 Purpose of This Portfolio
+
+This portfolio was created to:
+
+- Present my professional profile to recruiters and engineering leaders
+- Demonstrate frontend architecture decisions and code quality
+- Showcase UI/UX sensitivity combined with strong engineering foundations
+- Reflect how I approach real-world frontend problems
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **UI:** Tailwind CSS
+- **Animations:** Framer Motion
+- **State Management:** Zustand, Redux Toolkit
+- **Architecture:** Clean Architecture, modular design
+- **Testing:** Jest
+- **DevOps / CI:** Git-based workflow, Vercel CI/CD
+- **Deployment:** Vercel
+
+---
+
+## ✨ Key Focus Areas
+
+- Performance-first mindset
+- Reusable and composable components
+- Accessibility and UX details
+- Scalable state management
+- Clear separation of concerns
+- Production-ready code standards
+
+---
+
+## 🚀 Deployment
+
+This portfolio is deployed on **Vercel**, using automated CI/CD triggered by Git commits.
+
+---
+
+## 📬 Contact
+
+- **LinkedIn:** https://linkedin.com/in/tu-link
+- **GitHub:** https://github.com/tu-usuario
+- **Email:** tu-email@correo.com
+
+---
+
+© César Garcés
