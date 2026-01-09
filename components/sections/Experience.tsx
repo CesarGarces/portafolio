@@ -13,7 +13,7 @@ export default function Experience() {
 
   const getExperiences = () => {
     const items = []
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 6; i++) {
       items.push({
         company: t(`experience.items.${i}.company`),
         role: t(`experience.items.${i}.role`),
@@ -33,10 +33,12 @@ export default function Experience() {
   const experiences = getExperiences()
 
   const stackMap: Record<number, string[]> = {
-    0: ['React', 'TypeScript', 'Next.js', 'Zustand', 'AWS', 'Turborepo'],
-    1: ['React', 'TypeScript', 'Redux Toolkit', 'Sagas', 'WebSockets', 'D3.js'],
-    2: ['React Native', 'React', 'TypeScript', 'Firebase', 'GraphQL'],
-    3: ['React', 'JavaScript', 'Redux', 'Node.js', 'PostgreSQL'],
+    0: ['TypeScript', 'React', 'Zustand', 'WebSockets', 'Microfrontends'],
+    1: ['React', 'TypeScript', 'AWS', 'CodeCommit', 'CodePipeline', 'ECS', 'Amplify'],
+    2: ['React', 'TypeScript', 'React Query', 'React Hook Form', 'Microfrontends', 'Microservices'],
+    3: ['React', 'TypeScript', 'Salesforce', 'SFCC', 'HubSpot', 'Formik', 'Styled Components'],
+    4: ['JavaScript', 'HTML5', 'CSS3', 'IVR', 'SMS', 'Email'],
+    5: ['React', 'React Native', 'MeteorJs', 'PWA', 'Service Workers', 'SCRUM'],
   }
 
   return (

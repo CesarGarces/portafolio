@@ -34,10 +34,10 @@ export default function Projects() {
   const projects = getProjects()
 
   const stackMap: Record<number, string[]> = {
-    0: ['Next.js', 'TypeScript', 'Zustand', 'Module Federation', 'AWS CloudFront', 'Redis'],
-    1: ['React', 'TypeScript', 'Redux Toolkit', 'Sagas', 'WebSockets', 'D3.js', 'Node.js'],
-    2: ['React Native', 'TypeScript', 'Redux Toolkit', 'Firebase', 'GraphQL', 'Fastlane'],
-    3: ['React', 'Node.js', 'WebSockets', 'Redis', 'AWS SQS', 'TypeScript'],
+    0: ['TypeScript', 'React', 'Zustand', 'WebSockets', 'Microfrontends'],
+    1: ['React', 'TypeScript', 'AWS', 'CodeCommit', 'CodePipeline', 'ECS', 'Amplify'],
+    2: ['React', 'TypeScript', 'React Query', 'React Hook Form', 'Microfrontends', 'Microservices'],
+    3: ['React', 'TypeScript', 'Salesforce', 'SFCC', 'HubSpot', 'Formik', 'Styled Components'],
   }
 
   return (

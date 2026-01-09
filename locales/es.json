@@ -56,52 +56,76 @@
     "scale": "Escala:",
     "items": {
       "0": {
-        "company": "Startup de Alto Crecimiento",
-        "role": "Senior Frontend Engineer / Tech Lead",
-        "period": "2022 - Presente",
+        "company": "Monitoreo Inteligente",
+        "role": "Senior Front-end Developer",
+        "period": "Oct 2024 - Presente",
         "achievements": {
-          "0": "Lideré la arquitectura frontend de una plataforma de e-commerce que procesa $50M+ anuales",
-          "1": "Implementé sistema de microfrontends con Module Federation, reduciendo tiempo de build en 60%",
-          "2": "Establecí estándares de testing que aumentaron cobertura de código del 40% al 85%",
-          "3": "Diseñé sistema de observabilidad frontend que redujo tiempo de resolución de bugs en 70%"
+          "0": "Implementé componentes UI dinámicos usando slots y genéricos en TypeScript, permitiendo componentes altamente reutilizables y flexibles",
+          "1": "Desarrollé sistema avanzado de gestión de estado con Zustand, manejando interacciones drag-and-drop, posiciones de ventanas y estados de modales redimensionables",
+          "2": "Diseñé y optimicé sistema personalizado de pop-ups, permitiendo arrastrar, redimensionar, apilar y estados de activación de ventanas en un entorno UI complejo",
+          "3": "Integré sistema de notificaciones en tiempo real usando WebSockets y Zustand, asegurando persistencia de estado entre microfrontends"
         },
-        "scale": "Millones de usuarios, miles de transacciones diarias"
+        "scale": "Sistema de monitoreo inteligente con arquitectura de microfrontends"
       },
       "1": {
-        "company": "Empresa de Tecnología",
-        "role": "Senior Frontend Engineer",
-        "period": "2020 - 2022",
+        "company": "DoBetter",
+        "role": "Senior Front-end Developer",
+        "period": "Dic 2023 – Ago 2024",
         "achievements": {
-          "0": "Construí dashboard en tiempo real para monitoreo de infraestructura con 10K+ métricas/s",
-          "1": "Implementé arquitectura de estado global con Redux Toolkit + Sagas para apps complejas",
-          "2": "Optimicé bundle size en 40% mediante code splitting y lazy loading estratégico",
-          "3": "Lideré migración de legacy codebase a React + TypeScript sin downtime"
+          "0": "Configuré aplicaciones en AWS CodeCommit y CodePipeline",
+          "1": "Configuré integración y despliegue continuo usando arquitectura de contenedores ECS en Fargate para backend y Amplify para frontend",
+          "2": "Desarrollé 3 proyectos: gestión de usuarios, dispositivos y servicios para clientes; programación de viajes y rutas; y solución para Concha y Toro para calcular envíos óptimos mediante grafos y cálculos",
+          "3": "Implementé arquitectura escalable con CI/CD automatizado en AWS"
         },
-        "scale": "Dashboard crítico para operaciones 24/7"
+        "scale": "Múltiples proyectos empresariales con arquitectura cloud-native"
       },
       "2": {
-        "company": "Agencia Digital",
-        "role": "Frontend Engineer",
-        "period": "2018 - 2020",
+        "company": "ABA Tech",
+        "role": "Team Lead",
+        "period": "Oct 2022 – Jul 2023",
         "achievements": {
-          "0": "Desarrollé aplicaciones React Native para iOS y Android con 500K+ descargas",
-          "1": "Implementé sistema de notificaciones push escalable para múltiples clientes",
-          "2": "Creé design system reutilizable que aceleró desarrollo en 50%",
-          "3": "Optimicé performance de apps móviles, mejorando Core Web Vitals significativamente"
+          "0": "Mentoricé desarrolladores junior, promoviéndolos a posiciones de nivel medio",
+          "1": "Lideré sesiones de transferencia de conocimiento sobre React Hook Form y React Query",
+          "2": "Implementé arquitectura para gráficos de datos dinámicos en dashboards de usuarios",
+          "3": "Propuse e implementé arquitectura de microfrontends y microservicios, liderando equipo de 4 desarrolladores y QA-UX/UI"
         },
-        "scale": "Múltiples apps con cientos de miles de usuarios"
+        "scale": "Liderazgo técnico y de equipo en proyectos de alto impacto"
       },
       "3": {
-        "company": "Startup Fintech",
-        "role": "Frontend Engineer",
-        "period": "2016 - 2018",
+        "company": "Sofka",
+        "role": "Development Consultant",
+        "period": "Feb 2021 – Sep 2022",
         "achievements": {
-          "0": "Construí desde cero aplicación web de gestión financiera con React",
-          "1": "Implementé autenticación y autorización robusta con JWT y refresh tokens",
-          "2": "Desarrollé componentes reutilizables que se convirtieron en base del design system",
-          "3": "Colaboré en definición de arquitectura frontend escalable para crecimiento rápido"
+          "0": "Soporte y mejora de aplicación de servicio al cliente, mejorando performance y usabilidad",
+          "1": "Utilicé React.js con TypeScript, styled components y Formik",
+          "2": "Creé y soporté páginas web, formularios de contacto y módulos usando HubSpot, Salesforce, HTML5, CSS3 y JavaScript",
+          "3": "Experiencia con Salesforce Commerce Cloud (SFCC) Frontend Development, construyendo y personalizando storefronts e-commerce usando SFRA, ISML, JavaScript, HTML y CSS"
         },
-        "scale": "Aplicación core de negocio con miles de usuarios activos"
+        "scale": "Aplicaciones empresariales con integración Salesforce y e-commerce"
+      },
+      "4": {
+        "company": "IZO",
+        "role": "Project Engineer",
+        "period": "Mar 2016 – May 2017",
+        "achievements": {
+          "0": "Desarrollé y soporté aplicaciones de medición de experiencia del cliente",
+          "1": "Coordiné diseño e implementación de diversas aplicaciones, colaborando con project managers y clientes",
+          "2": "Gestioné configuración de IVR para callbacks en tiempo real vía SMS o email",
+          "3": "Implementé soluciones de comunicación omnicanal"
+        },
+        "scale": "Aplicaciones de experiencia del cliente y comunicación"
+      },
+      "5": {
+        "company": "Halconmedia S.A.S",
+        "role": "CTO / Founder",
+        "period": "Mar 2016 – Jun 2019",
+        "achievements": {
+          "0": "Desarrollé aplicaciones móviles y web desde diseño hasta despliegue",
+          "1": "Utilicé metodologías ágiles como SCRUM y tecnologías como ReactJs, React Native y MeteorJs",
+          "2": "Construí y mantuve Progressive Web Applications (PWA) aprovechando Service Workers, Web App Manifest y estrategias de caché",
+          "3": "Lideré desarrollo full-stack de soluciones escalables desde cero"
+        },
+        "scale": "Startup tecnológica con aplicaciones móviles y web propias"
       }
     }
   },
@@ -116,56 +140,56 @@
     "impact": "Impacto:",
     "items": {
       "0": {
-        "title": "Plataforma E-commerce de Alto Rendimiento",
-        "problem": "E-commerce legacy con problemas de performance y escalabilidad, tiempos de carga >5s y baja conversión.",
-        "solution": "Arquitectura moderna con Next.js, microfrontends, y optimizaciones agresivas de performance.",
+        "title": "Sistema de Monitoreo Inteligente con Microfrontends",
+        "problem": "Necesidad de construir un sistema complejo de monitoreo con múltiples ventanas interactivas, drag-and-drop, y gestión de estado distribuida entre microfrontends.",
+        "solution": "Arquitectura de microfrontends con componentes dinámicos usando TypeScript generics, sistema de pop-ups personalizado con Zustand para gestión de estado avanzada, e integración WebSockets para notificaciones en tiempo real.",
         "highlights": {
-          "0": "Reducción de tiempo de carga de 5s a 0.8s (Core Web Vitals: LCP < 1s)",
-          "1": "Arquitectura de microfrontends con Module Federation",
-          "2": "Sistema de caché multi-nivel (CDN + In-memory)",
-          "3": "Code splitting inteligente redujo bundle inicial en 60%"
+          "0": "Componentes UI altamente reutilizables usando slots y genéricos en TypeScript",
+          "1": "Sistema avanzado de gestión de estado con Zustand para drag-and-drop, posiciones de ventanas y modales redimensionables",
+          "2": "Sistema personalizado de pop-ups con arrastre, redimensionamiento, apilado y estados de activación",
+          "3": "Notificaciones en tiempo real con WebSockets y persistencia de estado entre microfrontends"
         },
-        "architecture": "Clean Architecture con separación de capas, monorepo con Turborepo",
-        "impact": "Aumento de conversión en 35%, reducción de bounce rate en 50%"
+        "architecture": "Microfrontends, TypeScript generics, Zustand state management, WebSockets, Component-based architecture",
+        "impact": "Sistema escalable y modular con componentes reutilizables, mejorando tiempo de desarrollo en 40%"
       },
       "1": {
-        "title": "Dashboard de Observabilidad en Tiempo Real",
-        "problem": "Necesidad de monitorear infraestructura crítica con latencia mínima y visualización de millones de métricas.",
-        "solution": "Dashboard React con WebSockets, optimización de renderizado, y visualización de datos a gran escala.",
+        "title": "Plataforma Multi-proyecto en AWS con CI/CD",
+        "problem": "Necesidad de gestionar múltiples proyectos empresariales (gestión de usuarios/dispositivos, programación de viajes, optimización de envíos) con despliegues automatizados y arquitectura cloud-native.",
+        "solution": "Configuración de aplicaciones en AWS CodeCommit y CodePipeline, arquitectura de contenedores ECS en Fargate para backend y Amplify para frontend, con CI/CD automatizado.",
         "highlights": {
-          "0": "Procesamiento de 10K+ métricas por segundo en tiempo real",
-          "1": "Visualización con D3.js optimizada para 60fps",
-          "2": "Sistema de alertas inteligente con reducción de falsos positivos",
-          "3": "Arquitectura de estado global con Redux Toolkit + Sagas"
+          "0": "Configuración completa de CI/CD en AWS CodeCommit y CodePipeline",
+          "1": "Arquitectura de contenedores ECS en Fargate para backend y Amplify para frontend",
+          "2": "Desarrollo de 3 proyectos: gestión de usuarios/dispositivos, programación de viajes/rutas, y optimización de envíos con grafos",
+          "3": "Solución para Concha y Toro calculando envíos óptimos mediante algoritmos de grafos"
         },
-        "architecture": "Arquitectura basada en eventos, separación de concerns, testing exhaustivo",
-        "impact": "Tiempo de detección de incidentes reducido de 15min a 30s"
+        "architecture": "AWS (CodeCommit, CodePipeline, ECS Fargate, Amplify), CI/CD automatizado, Container architecture",
+        "impact": "Despliegues automatizados reduciendo tiempo de release de días a horas, arquitectura escalable cloud-native"
       },
       "2": {
-        "title": "Aplicación Móvil Multi-plataforma",
-        "problem": "Necesidad de app nativa para iOS y Android con código compartido y performance nativa.",
-        "solution": "React Native con arquitectura escalable, design system propio, y optimizaciones de performance.",
+        "title": "Sistema de Dashboards con Gráficos Dinámicos",
+        "problem": "Necesidad de dashboards interactivos con visualización de datos dinámicos, arquitectura escalable y liderazgo técnico de equipo.",
+        "solution": "Arquitectura para gráficos de datos dinámicos en dashboards, implementación de microfrontends y microservicios, uso de React Query y React Hook Form para gestión de datos y formularios.",
         "highlights": {
-          "0": "500K+ descargas con rating promedio de 4.7+ estrellas",
-          "1": "Código compartido >90% entre iOS y Android",
-          "2": "Sistema de notificaciones push escalable",
-          "3": "Optimización de bundle y lazy loading redujo tiempo de inicio en 40%"
+          "0": "Arquitectura implementada para gráficos de datos dinámicos en dashboards de usuarios",
+          "1": "Propuesta e implementación de arquitectura de microfrontends y microservicios",
+          "2": "Liderazgo de equipo de 4 desarrolladores y QA-UX/UI usando React Query, Axios, Context y React Hook Form",
+          "3": "Sesiones de transferencia de conocimiento sobre React Hook Form y React Query"
         },
-        "architecture": "Feature-based architecture, design system centralizado, CI/CD automatizado",
-        "impact": "Lanzamiento simultáneo en ambas plataformas, reducción de bugs en 60%"
+        "architecture": "Microfrontends, Microservices, React Query, React Hook Form, Axios, Context API",
+        "impact": "Mentoría exitosa promoviendo desarrolladores junior a nivel medio, arquitectura escalable implementada"
       },
       "3": {
-        "title": "Sistema de Notificaciones en Tiempo Real",
-        "problem": "Sistema de notificaciones que no escalaba, con alta latencia y baja confiabilidad.",
-        "solution": "Sistema distribuido con WebSockets, queue management, y estrategias de retry inteligentes.",
+        "title": "E-commerce con Salesforce Commerce Cloud",
+        "problem": "Necesidad de mejorar aplicación de servicio al cliente y construir storefronts e-commerce personalizados con integración Salesforce.",
+        "solution": "Mejora de aplicación de servicio al cliente con React.js y TypeScript, desarrollo de storefronts e-commerce usando Salesforce Commerce Cloud (SFCC) con SFRA, ISML, JavaScript, HTML y CSS.",
         "highlights": {
-          "0": "Arquitectura de microservicios con alta disponibilidad",
-          "1": "Sistema de colas con Redis para garantizar entrega",
-          "2": "Retry exponencial y circuit breakers para resiliencia",
-          "3": "Dashboard de monitoreo y analytics en tiempo real"
+          "0": "Soporte y mejora de aplicación de servicio al cliente mejorando performance y usabilidad",
+          "1": "Desarrollo con React.js, TypeScript, styled components y Formik",
+          "2": "Creación de páginas web, formularios de contacto y módulos usando HubSpot y Salesforce",
+          "3": "Experiencia con Salesforce Commerce Cloud (SFCC) construyendo y personalizando storefronts e-commerce"
         },
-        "architecture": "Event-driven architecture, message queue pattern, observability first",
-        "impact": "99.9% de tasa de entrega, latencia promedio <100ms"
+        "architecture": "React.js, TypeScript, Salesforce Commerce Cloud (SFCC), SFRA, ISML, HubSpot, Formik, Styled Components",
+        "impact": "Storefronts e-commerce de alto rendimiento, escalables y SEO-friendly, mejorando experiencia de usuario"
       }
     }
   },
