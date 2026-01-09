@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { Mail, Linkedin, Github, Send, Check } from 'lucide-react'
+import { Mail, Linkedin, Github, Send, Check, MessageCircle } from 'lucide-react'
 import { useI18n } from '@/contexts/I18nContext'
 import { SOCIAL_LINKS } from '@/components/constants'
 
@@ -25,6 +25,12 @@ const socialLinks = [
     label: 'GitHub',
     href: SOCIAL_LINKS.github,
     color: 'text-foreground/80',
+  },
+  {
+    icon: MessageCircle,
+    label: 'WhatsApp',
+    href: SOCIAL_LINKS.whatsapp,
+    color: 'text-green-400',
   },
 ]
 

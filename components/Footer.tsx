@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail, MessageCircle } from 'lucide-react'
 import { useI18n } from '@/contexts/I18nContext'
 import { SOCIAL_LINKS } from '@/components/constants'
 
@@ -54,6 +54,15 @@ export default function Footer() {
               aria-label="GitHub"
             >
               <Github className="w-5 h-5" />
+            </a>
+            <a
+              href={SOCIAL_LINKS.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-green-400 transition-colors"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle className="w-5 h-5" />
             </a>
           </motion.div>
         </div>
