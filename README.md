@@ -65,9 +65,9 @@ This portfolio is deployed on **Vercel**, using automated CI/CD triggered by Git
 
 ## 📬 Contact
 
-- **LinkedIn:** https://linkedin.com/in/tu-link
-- **GitHub:** https://github.com/tu-usuario
-- **Email:** tu-email@correo.com
+- **LinkedIn:** https://www.linkedin.com/in/cesargarces/
+- **GitHub:** https://github.com/CesarGarces
+- **Email:** info@cesargarces.com
 
 ---
 
