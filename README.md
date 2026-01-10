@@ -39,6 +39,7 @@ This portfolio was created to:
 - **UI:** Tailwind CSS
 - **Animations:** Framer Motion
 - **State Management:** Zustand, Redux Toolkit
+- **AI Chat:** Groq (LLaMA 3.1 70B)
 - **Architecture:** Clean Architecture, modular design
 - **Testing:** Jest
 - **DevOps / CI:** Git-based workflow, Vercel CI/CD
@@ -57,9 +58,37 @@ This portfolio was created to:
 
 ---
 
+## 🚀 Getting Started
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+Get your free API key at: https://console.groq.com/
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser.
+
 ## 🚀 Deployment
 
 This portfolio is deployed on **Vercel**, using automated CI/CD triggered by Git commits.
+
+Make sure to add `GROQ_API_KEY` to your Vercel environment variables.
 
 ---
 

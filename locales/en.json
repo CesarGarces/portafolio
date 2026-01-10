@@ -6,7 +6,8 @@
     "experience": "Experience",
     "projects": "Projects",
     "philosophy": "Philosophy",
-    "contact": "Contact"
+    "contact": "Contact",
+    "chat": "Ask César"
   },
   "hero": {
     "badge": "Senior Frontend Engineer",
@@ -323,6 +324,18 @@
       "submitting": "Sending...",
       "submitted": "Sent"
     }
+  },
+  "chat": {
+    "title": "Ask",
+    "titleHighlight": "César",
+    "description": "Ask me anything about my experience, technologies I use, or projects. I'll respond as myself.",
+    "openChat": "Open Chat",
+    "terminalTitle": "cesar@portfolio:~$",
+    "welcome": "Hello! I'm César. How can I help you?",
+    "welcomeHint": "Ask me about React, TypeScript, frontend architecture, or any technical topic.",
+    "inputPlaceholder": "Type your question...",
+    "thinking": "Thinking...",
+    "error": "Sorry, there was an error processing your message. Please try again."
   },
   "footer": {
     "text": "© {year} César Garcés. Built with Next.js, TypeScript and Framer Motion."

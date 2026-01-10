@@ -14,6 +14,7 @@ const navItemsKeys = [
   { key: 'nav.projects', href: '#projects' },
   { key: 'nav.philosophy', href: '#philosophy' },
   { key: 'nav.contact', href: '#contact' },
+  { key: 'nav.chat', href: '#chat' },
 ]
 
 export default function Navigation() {

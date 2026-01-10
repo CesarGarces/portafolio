@@ -5,6 +5,7 @@ import Experience from '@/components/sections/Experience'
 import Projects from '@/components/sections/Projects'
 import Philosophy from '@/components/sections/Philosophy'
 import Contact from '@/components/sections/Contact'
+import Chat from '@/components/sections/Chat'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Projects />
       <Philosophy />
       <Contact />
+      <Chat />
       <Footer />
     </main>
   )
