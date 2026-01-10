@@ -10,7 +10,7 @@ const skillLevels: Record<number, Record<number, number>> = {
   0: { 0: 95, 1: 95, 2: 90, 3: 85, 4: 95 }, // Frontend Core
   1: { 0: 90, 1: 90, 2: 85, 3: 85 }, // State Management
   2: { 0: 90, 1: 85, 2: 85, 3: 85 }, // Arquitectura
-  3: { 0: 90, 1: 90, 2: 90, 3: 75 }, // Testing & Quality
+  3: { 0: 90, 1: 90, 2: 90, 3: 75, 4: 80 }, // Testing & Quality
   4: { 0: 80, 1: 85, 2: 80, 3: 75 }, // DevOps & Cloud
   5: { 0: 90, 1: 85, 2: 85, 3: 90 }, // Performance & Observability
 }
@@ -23,7 +23,7 @@ export default function Skills() {
   const getSkillCategories = () => {
     const categories = []
     for (let i = 0; i < 6; i++) {
-      const skillsCount = i === 0 ? 5 : 4 // Frontend Core has 5 skills, others have 4
+      const skillsCount = i === 0 ? 5 : i === 3 ? 5 : 4 // Frontend Core has 5 skills, Testing & Quality has 5 skills, others have 4
       const skills = []
       for (let j = 0; j < skillsCount; j++) {
         skills.push({

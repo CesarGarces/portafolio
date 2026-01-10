@@ -83,7 +83,8 @@
           "0": "Jest",
           "1": "React Testing Library",
           "2": "Unit Testing",
-          "3": "E2E Testing"
+          "3": "E2E Testing",
+          "4": "Testing Visual - Storybook / Cromatic"
         }
       },
       "4": {
