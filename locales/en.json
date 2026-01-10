@@ -65,7 +65,7 @@
           "0": "Zustand",
           "1": "Redux Toolkit",
           "2": "Redux Sagas",
-          "3": "React Query"
+          "3": "TanStack Query"
         }
       },
       "2": {
