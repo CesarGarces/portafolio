@@ -5,68 +5,41 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { useI18n } from '@/contexts/I18nContext'
 
-const skillCategories = [
-  {
-    title: 'Frontend Core',
-    skills: [
-      { name: 'React', level: 95 },
-      { name: 'TypeScript', level: 95 },
-      { name: 'Next.js', level: 90 },
-      { name: 'React Native', level: 85 },
-      { name: 'HTML/CSS', level: 95 },
-    ],
-  },
-  {
-    title: 'State Management',
-    skills: [
-      { name: 'Zustand', level: 90 },
-      { name: 'Redux Toolkit', level: 90 },
-      { name: 'Redux Sagas', level: 85 },
-      { name: 'React Query', level: 85 },
-    ],
-  },
-  {
-    title: 'Arquitectura',
-    skills: [
-      { name: 'Clean Architecture', level: 90 },
-      { name: 'Microfrontends', level: 85 },
-      { name: 'Monorepos (Turborepo/Nx)', level: 85 },
-      { name: 'Design Systems', level: 85 },
-    ],
-  },
-  {
-    title: 'Testing & Quality',
-    skills: [
-      { name: 'Jest', level: 90 },
-      { name: 'React Testing Library', level: 90 },
-      { name: 'Unit Testing', level: 90 },
-      { name: 'E2E Testing', level: 75 },
-    ],
-  },
-  {
-    title: 'DevOps & Cloud',
-    skills: [
-      { name: 'AWS (CodeCommit/CodeBuild)', level: 80 },
-      { name: 'CI/CD Pipelines', level: 85 },
-      { name: 'Docker', level: 80 },
-      { name: 'Load Balancers', level: 75 },
-    ],
-  },
-  {
-    title: 'Performance & Observability',
-    skills: [
-      { name: 'Performance Optimization', level: 90 },
-      { name: 'Frontend Observability', level: 85 },
-      { name: 'Bundle Optimization', level: 85 },
-      { name: 'Core Web Vitals', level: 90 },
-    ],
-  },
-]
+// Skill levels configuration
+const skillLevels: Record<number, Record<number, number>> = {
+  0: { 0: 95, 1: 95, 2: 90, 3: 85, 4: 95 }, // Frontend Core
+  1: { 0: 90, 1: 90, 2: 85, 3: 85 }, // State Management
+  2: { 0: 90, 1: 85, 2: 85, 3: 85 }, // Arquitectura
+  3: { 0: 90, 1: 90, 2: 90, 3: 75 }, // Testing & Quality
+  4: { 0: 80, 1: 85, 2: 80, 3: 75 }, // DevOps & Cloud
+  5: { 0: 90, 1: 85, 2: 85, 3: 90 }, // Performance & Observability
+}
 
 export default function Skills() {
   const { t } = useI18n()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+
+  const getSkillCategories = () => {
+    const categories = []
+    for (let i = 0; i < 6; i++) {
+      const skillsCount = i === 0 ? 5 : 4 // Frontend Core has 5 skills, others have 4
+      const skills = []
+      for (let j = 0; j < skillsCount; j++) {
+        skills.push({
+          name: t(`skills.categories.${i}.skills.${j}`),
+          level: skillLevels[i][j],
+        })
+      }
+      categories.push({
+        title: t(`skills.categories.${i}.title`),
+        skills,
+      })
+    }
+    return categories
+  }
+
+  const skillCategories = getSkillCategories()
 
   return (
     <section

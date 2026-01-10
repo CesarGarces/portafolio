@@ -47,7 +47,64 @@
   "skills": {
     "title": "Skills &",
     "titleHighlight": "Stack",
-    "description": "Technologies and tools I master to build world-class frontend systems"
+    "description": "Technologies and tools I master to build world-class frontend systems",
+    "categories": {
+      "0": {
+        "title": "Frontend Core",
+        "skills": {
+          "0": "React",
+          "1": "TypeScript",
+          "2": "Next.js",
+          "3": "React Native",
+          "4": "HTML/CSS"
+        }
+      },
+      "1": {
+        "title": "State Management",
+        "skills": {
+          "0": "Zustand",
+          "1": "Redux Toolkit",
+          "2": "Redux Sagas",
+          "3": "React Query"
+        }
+      },
+      "2": {
+        "title": "Architecture",
+        "skills": {
+          "0": "Clean Architecture",
+          "1": "Microfrontends",
+          "2": "Monorepos (Turborepo/Nx)",
+          "3": "Design Systems"
+        }
+      },
+      "3": {
+        "title": "Testing & Quality",
+        "skills": {
+          "0": "Jest",
+          "1": "React Testing Library",
+          "2": "Unit Testing",
+          "3": "E2E Testing"
+        }
+      },
+      "4": {
+        "title": "DevOps & Cloud",
+        "skills": {
+          "0": "AWS (CodeCommit/CodeBuild)",
+          "1": "CI/CD Pipelines",
+          "2": "Docker",
+          "3": "Load Balancers"
+        }
+      },
+      "5": {
+        "title": "Performance & Observability",
+        "skills": {
+          "0": "Performance Optimization",
+          "1": "Frontend Observability",
+          "2": "Bundle Optimization",
+          "3": "Core Web Vitals"
+        }
+      }
+    }
   },
   "experience": {
     "title": "Professional",
