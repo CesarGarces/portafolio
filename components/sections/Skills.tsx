@@ -5,7 +5,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { useI18n } from '@/contexts/I18nContext'
 
-// Skill levels configuration
+// Skill levels configuration - keys represent skill indices
 const skillLevels: Record<number, Record<number, number>> = {
   0: { 0: 95, 1: 95, 2: 90, 3: 85, 4: 95 }, // Frontend Core
   1: { 0: 90, 1: 90, 2: 85, 3: 85 }, // State Management
@@ -15,31 +15,27 @@ const skillLevels: Record<number, Record<number, number>> = {
   5: { 0: 90, 1: 85, 2: 85, 3: 90 }, // Performance & Observability
 }
 
+const CATEGORIES_COUNT = Object.keys(skillLevels).length
+
 export default function Skills() {
   const { t } = useI18n()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
-  const getSkillCategories = () => {
-    const categories = []
-    for (let i = 0; i < 6; i++) {
-      const skillsCount = i === 0 ? 5 : i === 3 ? 5 : 4 // Frontend Core has 5 skills, Testing & Quality has 5 skills, others have 4
-      const skills = []
-      for (let j = 0; j < skillsCount; j++) {
-        skills.push({
-          name: t(`skills.categories.${i}.skills.${j}`),
-          level: skillLevels[i][j],
-        })
-      }
-      categories.push({
-        title: t(`skills.categories.${i}.title`),
-        skills,
-      })
-    }
-    return categories
-  }
+  const skillCategories = Array.from({ length: CATEGORIES_COUNT }, (_, categoryIndex) => {
+    const categoryLevels = skillLevels[categoryIndex]
+    const skillIndices = Object.keys(categoryLevels).map(Number)
 
-  const skillCategories = getSkillCategories()
+    const skills = skillIndices.map((skillIndex) => ({
+      name: t(`skills.categories.${categoryIndex}.skills.${skillIndex}`),
+      level: categoryLevels[skillIndex],
+    }))
+
+    return {
+      title: t(`skills.categories.${categoryIndex}.title`),
+      skills,
+    }
+  })
 
   return (
     <section
