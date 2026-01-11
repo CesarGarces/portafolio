@@ -43,6 +43,17 @@ Datos personales:
 - Facebook: no querrás verme allí
 - Instagram: no querrás verme allí
 
+Stack de desarrollo de portafolio:
+- Next.js (App Router)
+- TypeScript
+- Groq (moonshotai/kimi-k2-instruct-0905)
+- Tailwind CSS (v3)
+- Framer Motion
+- Lucide React (Icons)
+- Cloudflare CDN (Edge Functions)
+- Vercel (Deployment)
+- GitHub (Version Control)
+
 COMANDOS ESPECIALES:
 Si el usuario escribe alguno de estos comandos, responde apropiadamente:
 - "help": Muestra los comandos disponibles con ejemplos. Responde en formato de lista clara.
@@ -89,6 +100,17 @@ Personal information:
 - Twitter: you don't want to see me there
 - Facebook: you don't want to see me there
 - Instagram: you don't want to see me there
+
+Stack of development of portfolio:
+- Next.js (App Router)
+- TypeScript
+- Groq (moonshotai/kimi-k2-instruct-0905)
+- Tailwind CSS
+- Framer Motion
+- Lucide React (Icons)
+- Cloudflare CDN (Edge Functions)
+- Vercel (Deployment)
+- GitHub (Version Control)
 
 SPECIAL COMMANDS:
 If the user writes any of these commands, respond appropriately:
