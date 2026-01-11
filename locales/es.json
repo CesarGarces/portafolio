@@ -333,6 +333,14 @@
     "terminalTitle": "cesar@portfolio:~$",
     "welcome": "Hola! Soy César. ¿En qué puedo ayudarte?",
     "welcomeHint": "Pregúntame sobre React, TypeScript, arquitectura frontend, o cualquier tema técnico.",
+    "commands": {
+      "title": "Comandos disponibles:",
+      "help": "muestra comandos",
+      "about": "sobre mí",
+      "skills": "mis habilidades",
+      "philosophy": "mi filosofía",
+      "clear": "limpiar chat"
+    },
     "inputPlaceholder": "Escribe tu pregunta...",
     "thinking": "Pensando...",
     "error": "Lo siento, hubo un error al procesar tu mensaje. Por favor intenta de nuevo."

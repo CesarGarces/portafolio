@@ -12,7 +12,7 @@ interface Message {
 }
 
 export default function Chat() {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const [isOpen, setIsOpen] = useState(false)
@@ -38,10 +38,32 @@ export default function Chat() {
     }
   }, [isOpen, isMinimized])
 
+  const handleCommand = (command: string): boolean => {
+    const cmd = command.toLowerCase().trim()
+
+    // Solo 'clear' se maneja localmente
+    if (cmd === 'clear') {
+      clearChat()
+      return true // Indica que fue manejado localmente
+    }
+
+    // Los demás comandos (help, about, skills, philosophy) se envían a la IA
+    return false
+  }
+
   const handleSend = async () => {
     if (!input.trim() || isLoading) return
 
-    const userMessage: Message = { role: 'user', content: input.trim() }
+    const userInput = input.trim()
+
+    // Verificar si es comando local (solo 'clear')
+    if (handleCommand(userInput)) {
+      setInput('')
+      return
+    }
+
+    // Todo lo demás (comandos help/about/skills/philosophy o preguntas normales) va a la IA
+    const userMessage: Message = { role: 'user', content: userInput }
     const newMessages = [...messages, userMessage]
     setMessages(newMessages)
     setInput('')
@@ -52,7 +74,7 @@ export default function Chat() {
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newMessages }),
+        body: JSON.stringify({ messages: newMessages, locale }),
       })
 
       if (!response.ok) {
@@ -144,9 +166,8 @@ export default function Chat() {
             className="fixed bottom-4 right-4 z-50 w-full max-w-md"
           >
             <div
-              className={`bg-background border border-foreground/10 rounded-lg shadow-2xl overflow-hidden flex flex-col ${
-                isMinimized ? 'h-16' : 'h-[600px]'
-              } transition-all duration-300`}
+              className={`bg-background border border-foreground/10 rounded-lg shadow-2xl overflow-hidden flex flex-col ${isMinimized ? 'h-16' : 'h-[600px]'
+                } transition-all duration-300`}
             >
               {/* Terminal Header */}
               <div className="bg-foreground/5 border-b border-foreground/10 px-4 py-3 flex items-center justify-between">
@@ -200,6 +221,41 @@ export default function Chat() {
                         <p className="text-xs mt-2 text-foreground/40">
                           {t('chat.welcomeHint')}
                         </p>
+                        <div className="text-sm mt-4 text-foreground/40">
+                          <p className="mb-2 text-foreground/60 text-left">{t('chat.commands.title')}</p>
+                          <ul className="space-y-1 text-left">
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary-400">$</span>
+                              <span>
+                                <span className="text-primary-300">help</span> → {t('chat.commands.help')}
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary-400">$</span>
+                              <span>
+                                <span className="text-primary-300">about</span> → {t('chat.commands.about')}
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary-400">$</span>
+                              <span>
+                                <span className="text-primary-300">skills</span> → {t('chat.commands.skills')}
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary-400">$</span>
+                              <span>
+                                <span className="text-primary-300">philosophy</span> → {t('chat.commands.philosophy')}
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary-400">$</span>
+                              <span>
+                                <span className="text-primary-300">clear</span> → {t('chat.commands.clear')}
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     )}
 
@@ -208,9 +264,8 @@ export default function Chat() {
                         key={index}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className={`flex gap-3 ${
-                          message.role === 'user' ? 'justify-end' : 'justify-start'
-                        }`}
+                        className={`flex gap-3 ${message.role === 'user' ? 'justify-end' : 'justify-start'
+                          }`}
                       >
                         {message.role === 'assistant' && (
                           <div className="w-6 h-6 rounded bg-primary-500/20 flex items-center justify-center flex-shrink-0">
@@ -218,11 +273,10 @@ export default function Chat() {
                           </div>
                         )}
                         <div
-                          className={`max-w-[80%] rounded-lg px-4 py-2 ${
-                            message.role === 'user'
-                              ? 'bg-primary-500/20 text-primary-300'
-                              : 'bg-foreground/5 text-foreground/90'
-                          }`}
+                          className={`max-w-[80%] rounded-lg px-4 py-2 ${message.role === 'user'
+                            ? 'bg-primary-500/20 text-primary-300'
+                            : 'bg-foreground/5 text-foreground/90'
+                            }`}
                         >
                           <div className="whitespace-pre-wrap break-words">
                             {message.content}
