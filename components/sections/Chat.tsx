@@ -165,12 +165,23 @@ export default function Chat() {
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             className="fixed z-50 sm:bottom-4 sm:right-4 sm:w-full sm:max-w-md chat-container"
             style={{
-              top: 'max(1rem, env(safe-area-inset-top, 1rem))',
-              bottom: 'max(1rem, env(safe-area-inset-bottom, 1rem))',
+              ...(isMinimized
+                ? {
+                    // Cuando está minimizado, posicionar desde abajo en móvil
+                    bottom: 'max(1rem, env(safe-area-inset-bottom, 1rem))',
+                    top: 'auto',
+                  }
+                : {
+                    // Cuando está expandido, usar top y bottom para ocupar todo el espacio
+                    top: 'max(1rem, env(safe-area-inset-top, 1rem))',
+                    bottom: 'max(1rem, env(safe-area-inset-bottom, 1rem))',
+                  }),
               left: 'max(0.5rem, env(safe-area-inset-left, 0.5rem))',
               right: 'max(0.5rem, env(safe-area-inset-right, 0.5rem))',
               width: 'calc(100vw - max(0.5rem, env(safe-area-inset-left, 0.5rem)) - max(0.5rem, env(safe-area-inset-right, 0.5rem)))',
-              maxHeight: 'calc(100vh - max(1rem, env(safe-area-inset-top, 1rem)) - max(1rem, env(safe-area-inset-bottom, 1rem)))',
+              maxHeight: isMinimized
+                ? undefined
+                : 'calc(100vh - max(1rem, env(safe-area-inset-top, 1rem)) - max(1rem, env(safe-area-inset-bottom, 1rem)))',
             }}
           >
             <div
