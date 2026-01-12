@@ -163,11 +163,25 @@ export default function Chat() {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed inset-2 sm:inset-auto sm:bottom-4 sm:right-4 z-50 w-[calc(100vw-1rem)] sm:w-full sm:max-w-md"
+            className="fixed sm:inset-auto sm:bottom-4 sm:right-4 z-50 sm:w-full sm:max-w-md"
+            style={{
+              top: 'max(0.5rem, env(safe-area-inset-top, 0.5rem))',
+              bottom: 'max(0.5rem, env(safe-area-inset-bottom, 0.5rem))',
+              left: 'max(0.5rem, env(safe-area-inset-left, 0.5rem))',
+              right: 'max(0.5rem, env(safe-area-inset-right, 0.5rem))',
+              width: 'calc(100vw - max(0.5rem, env(safe-area-inset-left, 0.5rem)) - max(0.5rem, env(safe-area-inset-right, 0.5rem)))',
+            }}
           >
             <div
-              className={`bg-background border border-foreground/10 rounded-lg shadow-2xl overflow-hidden flex flex-col ${isMinimized ? 'h-14 sm:h-16' : 'h-[calc(100vh-1rem)] sm:h-[600px]'
+              className={`bg-background border border-foreground/10 rounded-lg shadow-2xl overflow-hidden flex flex-col ${isMinimized ? 'h-14 sm:h-16' : 'sm:h-[600px]'
                 } transition-all duration-300`}
+              style={
+                !isMinimized
+                  ? {
+                    height: 'calc(100vh - max(0.5rem, env(safe-area-inset-top, 0.5rem)) - max(0.5rem, env(safe-area-inset-bottom, 0.5rem)))',
+                  }
+                  : undefined
+              }
             >
               {/* Terminal Header */}
               <div className="bg-foreground/5 border-b border-foreground/10 px-3 sm:px-4 py-2 sm:py-3 flex items-center justify-between">
