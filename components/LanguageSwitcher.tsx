@@ -38,21 +38,21 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg border border-foreground/10 bg-background/50 hover:bg-foreground/5 hover:border-primary-500/30 transition-all duration-300"
+        className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-foreground/10 bg-background/50 hover:bg-foreground/5 hover:border-primary-500/30 active:bg-foreground/10 transition-all duration-300 touch-manipulation"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Change language"
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        <Globe className="w-4 h-4 text-foreground/80" />
-        <span className="text-sm font-medium text-foreground/80 hidden sm:inline">
+        <Globe className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-foreground/80" />
+        <span className="text-xs sm:text-sm font-medium text-foreground/80 hidden sm:inline">
           {currentLanguage.code.toUpperCase()}
         </span>
         <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.2 }}
-          className="text-foreground/60"
+          className="text-foreground/60 text-xs sm:text-sm"
         >
           ▼
         </motion.span>
@@ -65,7 +65,7 @@ export default function LanguageSwitcher() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-2 w-48 rounded-lg border border-foreground/10 bg-background/95 backdrop-blur-md shadow-lg overflow-hidden z-50"
+            className="absolute right-0 mt-2 w-40 sm:w-48 rounded-lg border border-foreground/10 bg-background/95 backdrop-blur-md shadow-lg overflow-hidden z-50"
           >
             {languages.map((language) => {
               const isSelected = locale === language.code
@@ -76,7 +76,7 @@ export default function LanguageSwitcher() {
                     setLocale(language.code)
                     setIsOpen(false)
                   }}
-                  className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-foreground/5 transition-colors"
+                  className="w-full flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 text-left hover:bg-foreground/5 active:bg-foreground/10 transition-colors touch-manipulation"
                   whileHover={{ x: 4 }}
                 >
                   <span className="text-xl">{language.flag}</span>

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useI18n } from '@/contexts/I18nContext'
@@ -37,23 +37,23 @@ export default function Navigation() {
 
   return (
     <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-background/80 backdrop-blur-md border-b border-foreground/10'
-          : 'bg-transparent'
+        ? 'bg-background/80 backdrop-blur-md border-b border-foreground/10 shadow-sm'
+        : 'bg-background/40 backdrop-blur-sm'
         }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           <motion.a
             href="#hero"
             onClick={(e) => {
               e.preventDefault()
               handleNavClick('#hero')
             }}
-            className="text-xl font-semibold text-foreground hover:text-primary-400 transition-colors"
+            className="text-base sm:text-lg md:text-xl font-semibold text-foreground hover:text-primary-400 transition-colors truncate max-w-[140px] sm:max-w-none"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -61,7 +61,7 @@ export default function Navigation() {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
             {navItemsKeys.map((item) => (
               <motion.a
                 key={item.href}
@@ -70,7 +70,7 @@ export default function Navigation() {
                   e.preventDefault()
                   handleNavClick(item.href)
                 }}
-                className="text-sm text-foreground/80 hover:text-primary-400 transition-colors relative group"
+                className="text-xs md:text-sm text-foreground/80 hover:text-primary-400 transition-colors relative group whitespace-nowrap"
                 whileHover={{ y: -2 }}
                 suppressHydrationWarning
               >
@@ -82,15 +82,19 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button & Language Switcher */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="md:hidden flex items-center gap-2 sm:gap-3">
             <LanguageSwitcher />
             <button
-              className="text-foreground"
+              className="text-foreground/90 hover:text-foreground p-2 hover:bg-foreground/10 active:bg-foreground/20 rounded transition-colors touch-manipulation flex items-center justify-center min-w-[44px] min-h-[44px]"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMobileMenuOpen ? (
+                <X className="w-5 h-5 sm:w-6 sm:h-6" />
+              ) : (
+                <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -106,7 +110,7 @@ export default function Navigation() {
         transition={{ duration: 0.3 }}
         className="md:hidden overflow-hidden bg-background/95 backdrop-blur-md border-t border-foreground/10"
       >
-        <div className="px-4 py-4 space-y-4">
+        <div className="px-3 sm:px-4 py-3 sm:py-4 space-y-2 sm:space-y-3">
           {navItemsKeys.map((item) => (
             <a
               key={item.href}
@@ -115,7 +119,7 @@ export default function Navigation() {
                 e.preventDefault()
                 handleNavClick(item.href)
               }}
-              className="block text-foreground/80 hover:text-primary-400 transition-colors"
+              className="block text-sm sm:text-base text-foreground/80 hover:text-primary-400 active:text-primary-500 transition-colors py-1.5 sm:py-2 touch-manipulation"
               suppressHydrationWarning
             >
               {t(item.key)}
