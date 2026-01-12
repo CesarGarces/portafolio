@@ -55,3 +55,14 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #444;
 }
+
+/* Chat positioning for desktop */
+@media (min-width: 640px) {
+  .chat-container {
+    top: auto !important;
+    left: auto !important;
+    bottom: 1rem !important;
+    right: 1rem !important;
+    width: auto !important;
+  }
+}

@@ -163,7 +163,7 @@ export default function Chat() {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed sm:inset-auto sm:bottom-4 sm:right-4 z-50 sm:w-full sm:max-w-md"
+            className="fixed z-50 sm:bottom-4 sm:right-4 sm:w-full sm:max-w-md chat-container"
             style={{
               top: 'max(0.5rem, env(safe-area-inset-top, 0.5rem))',
               bottom: 'max(0.5rem, env(safe-area-inset-bottom, 0.5rem))',
