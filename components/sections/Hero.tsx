@@ -120,11 +120,19 @@ const statsVariants = {
 }
 
 // Particle component for Apple-style background effect
-function Particle({ delay = 0 }: { delay?: number }) {
-  const size = Math.random() * 4 + 2
-  const x = Math.random() * 100
-  const y = Math.random() * 100
-  const duration = Math.random() * 20 + 15
+function Particle({ delay = 0, index = 0 }: { delay?: number; index?: number }) {
+  // Use deterministic values based on index to avoid hydration mismatch
+  // Simple hash function for pseudo-random but consistent values
+  const hash = (seed: number) => {
+    const x = Math.sin(seed) * 10000
+    return x - Math.floor(x)
+  }
+
+  const size = hash(index * 0.1) * 4 + 2
+  const x = hash(index * 0.3) * 100
+  const y = hash(index * 0.7) * 100
+  const duration = hash(index * 0.5) * 20 + 15
+  const xOffset = hash(index * 0.9) * 50 - 25
 
   return (
     <motion.div
@@ -137,7 +145,7 @@ function Particle({ delay = 0 }: { delay?: number }) {
       }}
       animate={{
         y: [0, -100, 0],
-        x: [0, Math.random() * 50 - 25, 0],
+        x: [0, xOffset, 0],
         opacity: [0, 0.6, 0],
         scale: [0, 1.5, 0],
       }}
@@ -155,9 +163,11 @@ export default function Hero() {
   const { t } = useI18n()
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const containerRef = useRef<HTMLDivElement>(null)
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start start', 'end start'],
+    layoutEffect: false,
   })
 
   // Parallax effect for background
@@ -183,9 +193,9 @@ export default function Hero() {
     }
   }
 
-  // Generate particles
+  // Generate particles with deterministic values
   const particles = Array.from({ length: 20 }, (_, i) => (
-    <Particle key={i} delay={i * 0.5} />
+    <Particle key={i} delay={i * 0.5} index={i} />
   ))
 
   return (
