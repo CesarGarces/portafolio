@@ -331,8 +331,8 @@
     "description": "Ask me anything about my experience, technologies I use, or projects. I'll respond as myself.",
     "openChat": "Open Chat",
     "terminalTitle": "cesar@portfolio:~$",
-    "welcome": "Hello! I'm César. How can I help you?",
-    "welcomeHint": "Ask me about React, TypeScript, frontend architecture, or any technical topic.",
+    "welcome": "Hey, I'm César.",
+    "welcomeHint": "This is my interactive terminal. Ask me about React, TypeScript, frontend architecture, or any technical topic.",
     "commands": {
       "title": "Available commands:",
       "help": "show commands",
