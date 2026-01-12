@@ -4,14 +4,9 @@ import React, { createContext, useContext, useEffect, useState, useCallback } fr
 import type { Locale, Translations } from '@/lib/i18n/types'
 import { getInitialLocale, storeLocale, loadTranslations } from '@/lib/i18n'
 import { i18nConfig } from '@/lib/i18n/config'
+import { I18nContextValue } from './types'
 
-interface I18nContextValue {
-  locale: Locale
-  translations: Translations
-  setLocale: (locale: Locale) => void
-  t: (key: string, params?: Record<string, string | number>) => string
-  isHydrated: boolean
-}
+
 
 const I18nContext = createContext<I18nContextValue | undefined>(undefined)
 
