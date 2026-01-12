@@ -144,7 +144,7 @@ function Particle({ delay = 0, index = 0 }: { delay?: number; index?: number }) 
         top: `${y}%`,
       }}
       animate={{
-        y: [0, -100, 0],
+        y: [0, -50, 0],
         x: [0, xOffset, 0],
         opacity: [0, 0.6, 0],
         scale: [0, 1.5, 0],
@@ -202,7 +202,7 @@ export default function Hero() {
     <section
       ref={containerRef}
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-x-hidden w-full"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden w-full"
     >
       {/* Animated Background Layers - Apple style */}
       <motion.div
