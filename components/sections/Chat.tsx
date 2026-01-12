@@ -163,7 +163,7 @@ export default function Chat() {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed inset-2 sm:inset-auto sm:bottom-4 sm:right-4 z-50 w-auto sm:w-full sm:max-w-md"
+            className="fixed inset-2 sm:inset-auto sm:bottom-4 sm:right-4 z-50 w-[calc(100vw-1rem)] sm:w-full sm:max-w-md"
           >
             <div
               className={`bg-background border border-foreground/10 rounded-lg shadow-2xl overflow-hidden flex flex-col ${isMinimized ? 'h-14 sm:h-16' : 'h-[calc(100vh-1rem)] sm:h-[600px]'

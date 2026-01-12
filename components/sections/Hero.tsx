@@ -192,7 +192,7 @@ export default function Hero() {
     <section
       ref={containerRef}
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-x-hidden w-full"
     >
       {/* Animated Background Layers - Apple style */}
       <motion.div
