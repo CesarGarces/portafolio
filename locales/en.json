@@ -312,18 +312,7 @@
     "title": "Contact",
     "description": "Interested in collaborating? I'm open to opportunities at Big Tech and high-growth startups.",
     "connect": "Let's Connect",
-    "connectDescription": "I'm available for conversations about frontend architecture, technical leadership, or collaboration opportunities. Feel free to reach out.",
-    "form": {
-      "name": "Name",
-      "namePlaceholder": "Your name",
-      "email": "Email",
-      "emailPlaceholder": "your@email.com",
-      "message": "Message",
-      "messagePlaceholder": "Tell me about your project or opportunity...",
-      "submit": "Send Message",
-      "submitting": "Sending...",
-      "submitted": "Sent"
-    }
+    "connectDescription": "I'm available for conversations about frontend architecture, technical leadership, or collaboration opportunities. Feel free to reach out."
   },
   "chat": {
     "title": "Ask",

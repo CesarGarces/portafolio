@@ -312,18 +312,7 @@
     "title": "Contacto",
     "description": "¿Interestado en colaborar? Estoy abierto a oportunidades en Big Tech y startups de alto crecimiento.",
     "connect": "Conectemos",
-    "connectDescription": "Estoy disponible para conversaciones sobre arquitectura frontend, liderazto técnico, o oportunidades de colaboración. No dudes en contactarme.",
-    "form": {
-      "name": "Nombre",
-      "namePlaceholder": "Tu nombre",
-      "email": "Email",
-      "emailPlaceholder": "tu@email.com",
-      "message": "Mensaje",
-      "messagePlaceholder": "Cuéntame sobre tu proyecto o oportunidad...",
-      "submit": "Enviar Mensaje",
-      "submitting": "Enviando...",
-      "submitted": "Enviado"
-    }
+    "connectDescription": "Estoy disponible para conversaciones sobre arquitectura frontend, oportunidades de colaboración, o liderazto técnico,  No dudes en contactarme."
   },
   "chat": {
     "title": "Pregúntale a",
