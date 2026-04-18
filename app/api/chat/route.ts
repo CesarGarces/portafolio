@@ -46,7 +46,7 @@ Datos personales:
 Stack de desarrollo de portafolio:
 - Next.js (App Router)
 - TypeScript
-- Groq (moonshotai/kimi-k2-instruct-0905)
+- Groq (openai/gpt-oss-120b)
 - Tailwind CSS (v3)
 - Framer Motion
 - Lucide React (Icons)
@@ -104,7 +104,7 @@ Personal information:
 Stack of development of portfolio:
 - Next.js (App Router)
 - TypeScript
-- Groq (moonshotai/kimi-k2-instruct-0905)
+- Groq (openai/gpt-oss-120b)
 - Tailwind CSS
 - Framer Motion
 - Lucide React (Icons)
