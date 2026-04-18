@@ -136,7 +136,7 @@ export async function POST(request: NextRequest) {
     const systemPrompt = locale === 'en' ? SYSTEM_PROMPT_EN : SYSTEM_PROMPT_ES
 
     const stream = await groq.chat.completions.create({
-      model: 'moonshotai/kimi-k2-instruct-0905',
+      model: 'openai/gpt-oss-120b',
       messages: [
         { role: 'system', content: systemPrompt },
         ...messages,
